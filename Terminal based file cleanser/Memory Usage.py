@@ -1,9 +1,6 @@
 
 import psutil
 from blessings import Terminal
-import sys
-import tty
-import termios
 
 term = Terminal()
 
