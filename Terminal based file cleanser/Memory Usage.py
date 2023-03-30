@@ -1,9 +1,5 @@
-
 import psutil
 from blessings import Terminal
-import sys
-import tty
-import termios
 
 term = Terminal()
 
@@ -27,8 +23,7 @@ while True:
         print('Memory Usage: {}%'.format(used_percent))
         print(draw_bar_graph(used_percent / 100))
 
-        psutil.cpu_percent(interval=1)
+        psutil.cpu_percent(interval=10)
 
         if term.inkey() is not None:
             break
-

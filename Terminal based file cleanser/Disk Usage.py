@@ -24,9 +24,7 @@ while True:
         print('Disk Usage: {}%'.format(used_percent))
         print(barGraph(used_percent / 100))
 
-        psutil.cpu_percent(interval=1)
+        psutil.cpu_percent(interval=10)
 
         if term.inkey() is not None:
             break
-
-
